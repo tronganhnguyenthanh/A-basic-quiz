@@ -1,0 +1,17 @@
+.form-control:focus{
+  box-shadow:none !important;
+}
+
+.wrapper{
+  padding-top:20%;
+}
+
+body{
+ background-image:url("../images/bgQuiz.jpg");
+ background-repeat:no-repeat;
+ background-size:cover;
+}
+
+.card{
+  border-radius:25px !important;
+}
