@@ -1,8 +1,10 @@
 document.querySelector(".btn.btn-danger").addEventListener("click", function(){
   let answer4 = document.querySelector("#qt4").value
   if(answer4 === ""){
-    alert("Please enter your answer");
+    document.querySelector("#error").innerHTML = "<p class='text-center text-danger'>" + " Please enter your answer " + "</p>"
     return;
+   }else{
+    document.querySelector("#error").innerHTML = ""
    }
    switch (answer4) {
      case "lion":

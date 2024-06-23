@@ -1,8 +1,10 @@
 document.querySelector(".btn.btn-danger").addEventListener("click", function(){
  let answer1 = document.querySelector("#qt1").value
  if(answer1 === ""){
-  alert("Please enter your answer");
-  return;
+   document.querySelector("#error").innerHTML = "<p class='text-center text-danger'>" + " Please enter your answer " + "</p>"
+   return;
+ }else{
+   document.querySelector("#error").innerHTML = ""
  }
  switch (answer1) {
     case "Grass and water":

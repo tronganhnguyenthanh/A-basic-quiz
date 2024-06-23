@@ -2,8 +2,10 @@ document.querySelector(".btn.btn-danger").addEventListener("click", function(){
     let answer2 = document.querySelector("#qt2").value;
     let convertAnswer2 = parseInt(answer2)
     if(answer2 === ""){
-     alert("Please enter your answer");
+     document.querySelector("#error").innerHTML = "<p class='text-center text-danger'>" + " Please enter your answer " + "</p>"
      return;
+    }else{
+      document.querySelector("#error").innerHTML = ""
     }
     switch (convertAnswer2){
        case 4:
